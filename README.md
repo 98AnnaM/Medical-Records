@@ -20,11 +20,9 @@ A patient can be examined by a doctor. The doctor has to give one or more diagno
 Patients:
 - Getting all patients: GET request to `/patients`
 - Getting information about a specific patient (by patient id): GET request to `/patients/:id`
-- Creating a new patient: POST request to `/patients`
-  
+- Creating a new patient: POST request to `/patients`  
   (request body should contain patient name, id of the GP and a boolean value, showing if the patient is insured)
-- Editing an existing patient (by patient id): PUT request to `/patients/:id`
-
+- Editing an existing patient (by patient id): PUT request to `/patients/:id`  
   (request body should contain patient name, id of the GP and a boolean value, showing if the patient is insured)
 - Deleting an existing patient (by patient id): DELETE request to `/patients/:id`
 - Get all patients with Insurance: GET request to `/patients/has-insurance`
