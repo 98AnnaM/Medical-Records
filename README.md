@@ -53,3 +53,12 @@ Visits:
 - Get the total income from the visits with a specific diagnosis (by the id of the diagnosis): GET request to `/visits/total-income-by-diagnosis/:diagnosisId`
 - Get the total income from the visits of patients without insurance: GET request to `/visits/total-income-by-patients-no-insurance`
 - Get the total income from the visits to a specific doctor from insured patients (by the id of the doctor): GET request to `/visits/total-income-by-doctor-insured-patients/:doctorId`
+  
+Diagnoses:
+- Getting all diagnoses: GET request to `/diagnoses`
+- Getting information about specific diagnosis (by diagnosis id): GET request to `/diagnoses/:id`
+- Creating a new diagnosis: POST request to `/diagnoses`  
+  (request body should contain diagnosis's name)
+- Editing an existing diagnosis (by diagnosis id): PUT request to `/diagnoses/:id`  
+  (request body should contain diagnosis's name)
+- Deleting an existing diagnosis (by diagnosis id): DELETE request to `/diagnoses/:id`
