@@ -52,4 +52,4 @@ Visits:
 - Get the count of doctors with income bigger than a specific value (by value of minIncome): GET request to `/visits/count-doctors-by-income/:minIncome`
 - Get the total income from the visits with a specific diagnosis (by the id of the diagnosis): GET request to `/visits/total-income-by-diagnosis/:diagnosisId`
 - Get the total income from the visits of patients without insurance: GET request to `/visits/total-income-by-patients-no-insurance`
-- Get the total income from the visits to a specific doctor from insured patients (by the id of the doctor): GET request to `/visits/total-income-by-doctor-insured-patients/:doctorId` doctor from insured patients (by the id of the doctor): GET request to `/visits/total-income-by-doctor-insured-patients/:doctorId`
+- Get the total income from the visits to a specific doctor from insured patients (by the id of the doctor): GET request to `/visits/total-income-by-doctor-insured-patients/:doctorId`
