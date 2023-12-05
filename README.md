@@ -31,23 +31,19 @@ Patients:
 Doctors:
 - Getting all doctors: GET request to `/doctors`
 - Getting information about specific doctor (by doctor id): GET request to `/doctors/:id`
-- Creating a new doctor: POST request to `/doctors`
-
-  (request body should contain doctor's name, birthdate, a set of specialties of the doctor and a boolean isGp, showing if the doctor is a GP or not)
-- Editing an existing doctor (by doctor id): PUT request to `/doctors/:id`
-
-  (request body should contain doctor's name, birthdate, a set of specialties of the doctor and a boolean isGp, showing if the doctor is a GP or not)
+- Creating a new doctor: POST request to `/doctors`  
+  (request body should contain doctor's name, birthdate, a set of specialties of the doctor, and a boolean isGp, showing if the doctor is a GP or not)
+- Editing an existing doctor (by doctor id): PUT request to `/doctors/:id`  
+  (request body should contain doctor's name, birthdate, a set of specialties of the doctor, and a boolean isGp, showing if the doctor is a GP or not)
 - Deleting an existing doctor (by doctor id): DELETE request to `/doctors/:id`
 
 Visits:
 - Getting all visits: GET request to `/visits`
 - Getting information about a specific visit (by visit id): GET request to `/visits/:id`
-- Creating a new visit: POST request to `/visits`
-
-  (request body should contain id of the patient, id of the doctor, a set of diagnosis IDs and id of the HealthSystem)
-- Editing an existing visit (by visit id): PUT request to `/visits/:id`
-
-  (request body should contain id of the patient, id of the doctor, a set of diagnosis IDs and id of the HealthSystem)
+- Creating a new visit: POST request to `/visits`  
+  (request body should contain id of the patient, id of the doctor, a set of diagnosis IDs, and id of the HealthSystem)
+- Editing an existing visit (by visit id): PUT request to `/visits/:id`  
+  (request body should contain id of the patient, id of the doctor, a set of diagnosis IDs, and id of the HealthSystem)
 - Deleting an existing visit (by visit id): DELETE request to `/visits/:id`
 - Get the total income from all visits: GET request to `/visits/total-income`
 - Get the total income from the visits of a specific doctor (by the id of the doctor): GET request to `/visits/total-income-by-doctor/:doctorId`
@@ -56,4 +52,4 @@ Visits:
 - Get the count of doctors with income bigger than a specific value (by value of minIncome): GET request to `/visits/count-doctors-by-income/:minIncome`
 - Get the total income from the visits with a specific diagnosis (by the id of the diagnosis): GET request to `/visits/total-income-by-diagnosis/:diagnosisId`
 - Get the total income from the visits of patients without insurance: GET request to `/visits/total-income-by-patients-no-insurance`
-- Get the total income from the visits to a specific doctor from insured patients (by the id of the doctor): GET request to `/visits/total-income-by-doctor-insured-patients/:doctorId`
+- Get the total income from the visits to a specific doctor from insured patients (by the id of the doctor): GET request to `/visits/total-income-by-doctor-insured-patients/:doctorId` doctor from insured patients (by the id of the doctor): GET request to `/visits/total-income-by-doctor-insured-patients/:doctorId`
