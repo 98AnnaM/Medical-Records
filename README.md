@@ -19,7 +19,7 @@ A patient can be examined by a doctor. The doctor has to give one or more diagno
 
 Patients:
 - Getting all patients: GET request to `/patients`
-- Getting information about specific patient (by patient id): GET request to `/patients/:id
+- Getting information about specific patient (by patient id): GET request to `/patients/:id`
 - Creating a new patient: POST request to `/patients`
   
   (request body should contain patient name, id of the GP and a boolean value, showing if the patient is insured)
