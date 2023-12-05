@@ -62,3 +62,23 @@ Diagnoses:
 - Editing an existing diagnosis (by diagnosis id): PUT request to `/diagnoses/:id`  
   (request body should contain diagnosis's name)
 - Deleting an existing diagnosis (by diagnosis id): DELETE request to `/diagnoses/:id`
+
+HealthSystem:
+- Getting all health systems: GET request to `/healthSystem`
+- Getting information about specific health system (by health system id): GET request to `/healthSystem/:id`
+- Creating a new health system: POST request to `/healthSystem`  
+  (request body should contain positive fee value)
+- Editing an existing health system (by health system id): PUT request to `/healthSystem/:id`  
+  (request body should contain positive fee value)
+- Deleting an existing health system (by health system id): DELETE request to `/healthSystem/:id`
+
+Specialty:
+- Getting all specialties: GET request to `/specialties`
+- Getting information about specific specialty (by specialty id): GET request to `/specialties/:id`
+- Creating a new specialty: POST request to `/specialties`  
+  (request body should contain specialty name)
+- Editing an existing specialty (by specialty id): PUT request to `/specialties/:id`  
+  (request body should contain specialty name)
+- Deleting an existing specialty (by specialty id): DELETE request to `/specialties/:id`
+
+## Test coverage
