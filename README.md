@@ -19,7 +19,7 @@ A patient can be examined by a doctor. The doctor has to give one or more diagno
 
 Patients:
 - Getting all patients: GET request to `/patients`
-- Getting information about specific patient (by patient id): GET request to `/patients/:id`
+- Getting information about a specific patient (by patient id): GET request to `/patients/:id`
 - Creating a new patient: POST request to `/patients`
   
   (request body should contain patient name, id of the GP and a boolean value, showing if the patient is insured)
@@ -32,7 +32,7 @@ Patients:
 
 Doctors:
 - Getting all doctors: GET request to `/doctors`
-- Getting information about specific doctor (by doctor id): GET request to `/doctors/:id
+- Getting information about specific doctor (by doctor id): GET request to `/doctors/:id`
 - Creating a new doctor: POST request to `/doctors`
 
   (request body should contain doctor's name, birthdate, a set of specialties of the doctor and a boolean isGp, showing if the doctor is a GP or not)
@@ -43,13 +43,13 @@ Doctors:
 
 Visits:
 - Getting all visits: GET request to `/visits`
-- Getting information about specific visit (by visit id): GET request to `/visits/:id`
+- Getting information about a specific visit (by visit id): GET request to `/visits/:id`
 - Creating a new visit: POST request to `/visits`
 
-  (request body should contain request body should contain id of the patient, id of the doctor, a set of diagnosis IDs and id of the HealthSystem)
-- Editing an existing patient (by patient id): PUT request to `/visits/:id`
+  (request body should contain id of the patient, id of the doctor, a set of diagnosis IDs and id of the HealthSystem)
+- Editing an existing visit (by visit id): PUT request to `/visits/:id`
 
-  (request body should contain request body should contain id of the patient, id of the doctor, a set of diagnosis IDs and id of the HealthSystem)
+  (request body should contain id of the patient, id of the doctor, a set of diagnosis IDs and id of the HealthSystem)
 - Deleting an existing visit (by visit id): DELETE request to `/visits/:id`
 - Get the total income from all visits: GET request to `/visits/total-income`
 - Get the total income from the visits of a specific doctor (by the id of the doctor): GET request to `/visits/total-income-by-doctor/:doctorId`
