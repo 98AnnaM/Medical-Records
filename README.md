@@ -82,3 +82,7 @@ Specialty:
 - Deleting an existing specialty (by specialty id): DELETE request to `/specialties/:id`
 
 ## Test coverage
+
+Unit and integration tests with total line coverage of 95%:
+
+![image](https://github.com/98AnnaM/Medical-Records/assets/147516467/727ba645-81b8-4a3c-a02f-b61392abe2d4)
